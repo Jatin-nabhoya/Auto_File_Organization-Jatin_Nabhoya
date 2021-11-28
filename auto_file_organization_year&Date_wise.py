@@ -19,8 +19,6 @@ for file in filelist:
 
     time1=time.ctime(t)
     
-    print(time1)
-    
     year = time1[-4:]
     month = time1[4:7]
     date = time1[8:10]
