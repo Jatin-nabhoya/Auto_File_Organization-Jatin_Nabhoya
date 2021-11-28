@@ -2,7 +2,13 @@ import PySimpleGUI as sg
 
 sg.theme('BlueMono')
 
-layout = [[sg.Text("")], [sg.Text("Choose Source folder: ", size=(20, 1)), sg.InputText(), sg.FolderBrowse()], [sg.Text("Choose Destination folder: ", size=(20, 1)), sg.InputText(), sg.FolderBrowse()], [sg.Text("")],[sg.Text("")] ,[sg.Button("Submit", size=(8, 1))]]
+layout = [
+          [sg.Text("")], 
+          [sg.Text("Choose Source folder: ", size=(20, 1)), sg.InputText(), sg.FolderBrowse()], 
+          [sg.Text("Choose Destination folder: ", size=(20, 1)), sg.InputText(), sg.FolderBrowse()], 
+          [sg.Text("")],[sg.Text("")] ,
+          [sg.Button("Submit", size=(9, 1))]
+         ]
 
 window = sg.Window("Python OS Project", layout, size=(600,200))
     
@@ -25,4 +31,3 @@ while True:
         source=values[0]
         destination=values[1]
         break
-
