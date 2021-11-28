@@ -30,11 +30,11 @@ for file in filelist:
         path=os.path.join(destination, year)
         os.mkdir(path)
     if not(os.path.isdir(destination + year + '/' + month)):
-            path1=os.path.join(destination + year , month)
-            os.mkdir(path1)
+        path1=os.path.join(destination + year , month)
+        os.mkdir(path1)
     if not(os.path.isdir(destination + year + '/' + month + '/' + date)):
-                path2=os.path.join(destination + year + '/' + month , date)
-                os.mkdir(path2)
+        path2=os.path.join(destination + year + '/' + month , date)
+        os.mkdir(path2)
 
     s = spath + file
     d = destination + year + '/' + month + '/' + date + '/' + file
